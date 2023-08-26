@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+  animation: fadeIn 1s alternate;
+  background-color: rgb(7, 7, 7);
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  padding: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(7, 7, 7);
+  color: rgb(255, 255, 255);
+}
+nav a {
+  text-decoration: none;
+  color: rgb(187, 179, 179);
+}
+nav .active {
+  color: rgb(255, 255, 255);
+}
+nav a:hover {
+  filter: contrast(2);
+  text-shadow: -1px -1px 3px #2347c0, 1px 2px 4px #d21717;
+  transform: scale(1.1);
+  transition: 0.3s ease-out;
+}
+nav a:not(:hover) {
+  position: inherit;
+  text-shadow: 0px 0px 0px #2347c0, 0px 10px 10px rgb(13, 101, 233);
+  filter: contrast(1);
+  transform: scale(1);
+  transition: 0.3s ease-out;
+}
+
+.main-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+.main-container > div {
+  flex: 1;
+}
+.main-container .leftSide {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main-container .leftSide img {
+  width: 70%;
+  aspect-ratio: 1;
+  border-radius: 5px;
+}
+.main-container .rightSide {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.main-container .rightSide .nameText h1 {
+  font-size: 4rem;
+  margin-bottom: 0px;
+}
+.main-container .rightSide .profession h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+.main-container .rightSide .bio h4 {
+  font-size: 1.25rem;
+  margin-bottom: 50px;
+  color: rgb(187, 179, 179);
+  width: 75%;
+}
+.main-container .rightSide .viewCv a {
+  padding: 10px 25px;
+  text-decoration: none;
+  color: white;
+  border-radius: 2.5px;
+  background-color: rgb(13, 101, 233);
+}
+.main-container .rightSide .viewCv a:hover {
+  filter: contrast(2);
+  text-shadow: -1px -1px 3px #2347c0, 1px 2px 4px #d21717;
+  transform: scale(1.1);
+  transition: 0.3s ease-out;
+}
+.main-container .rightSide .viewCv a:not(:hover) {
+  position: inherit;
+  text-shadow: 0px 0px 0px #2347c0, 0px 10px 10px rgb(13, 101, 233);
+  filter: contrast(1);
+  transform: scale(1);
+  transition: 0.3s ease-out;
+}
+
+@media screen and (orientation: portrait) {
+  .main-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+  }
+  .main-container > div {
+    flex: 1;
+  }
+  .main-container .leftSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-container .leftSide img {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 5px;
+  }
+  .main-container .rightSide {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    gap: 5px;
+    text-align: center;
+  }
+  .main-container .rightSide .nameText h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+  }
+  .main-container .rightSide .profession h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+  .main-container .rightSide .bio h4 {
+    font-size: 0.75rem;
+    margin-bottom: 50px;
+    color: rgb(187, 179, 179);
+    width: 100%;
+  }
+  .main-container .rightSide .viewCv a {
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 2.5px;
+    background-color: rgb(13, 101, 233);
+  }
+  .main-container .rightSide .viewCv a:hover {
+    filter: contrast(2);
+    text-shadow: -1px -1px 3px #2347c0, 1px 2px 4px #d21717;
+    transform: scale(1.1);
+    transition: 0.3s ease-out;
+  }
+  .main-container .rightSide .viewCv a:not(:hover) {
+    position: inherit;
+    text-shadow: 0px 0px 0px #2347c0, 0px 10px 10px rgb(13, 101, 233);
+    filter: contrast(1);
+    transform: scale(1);
+    transition: 0.3s ease-out;
+  }
+}/*# sourceMappingURL=indexStyles.css.map */
