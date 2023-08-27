@@ -22,11 +22,11 @@ if ((document.location.href).includes('works')) {
     const worksParent = document.querySelector(".worksContainer");
 
     for (let i in workNames) {
-        const childToAppend = `<div style="background-image: url(${workImages[i]})" class="workTab">
+        const childToAppend = `<a href="${workLinks[i]}" style="background-image: url(${workImages[i]})" class="workTab">
         <div class="texts">
-            <a href="${workLinks[i]}">${workNames[i]}</a>
+            <p>${workNames[i]}</p>
         </div>
-        </div>`
+        </a>`
         setTimeout(() => {
             worksParent.insertAdjacentHTML("beforeend", childToAppend)
         }, i * 150)

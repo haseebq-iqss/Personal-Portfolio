@@ -17,6 +17,18 @@
     transform: scale(1);
   }
 }
+@keyframes fadeInExtreme {
+  0% {
+    filter: grayscale(1);
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  100% {
+    filter: grayscale(0);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 *::-webkit-scrollbar {
   display: none;
 }
@@ -95,15 +107,17 @@ nav a:not(:hover) {
   width: 30%;
   aspect-ratio: 1;
   background-color: rgb(226, 219, 219);
+  animation: fadeInExtreme 0.75s alternate ease-in-out;
+  transition: all 0.4s;
+  text-decoration: none;
 }
 .main-container .worksContainer .workTab .texts {
   width: 100%;
   text-align: center;
   background-color: black !important;
 }
-.main-container .worksContainer .workTab .texts a {
-  font-size: 1.5rem;
-  text-decoration: none;
+.main-container .worksContainer .workTab .texts p {
+  font-size: 1rem;
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
@@ -172,7 +186,7 @@ nav a:not(:hover) {
     text-align: center;
     background-color: black !important;
   }
-  .main-container .worksContainer .workTab .texts a {
+  .main-container .worksContainer .workTab .texts p {
     font-size: 0.5rem;
     text-decoration: none;
     font-weight: 700;
